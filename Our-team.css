@@ -1,4 +1,4 @@
-root {
+:root {
     --bg-dark: #0b0f19;
     --bg-nav: #121824;
     --cyan-glow: #4c00ffc0;
@@ -605,6 +605,7 @@ body {
     transform: translateY(-5px);
 
 }
+
 
 
 
@@ -1542,7 +1543,6 @@ body {
 }
 
 
-
 /* =================================
    CYBER TIMELINE SECTION
 ================================= */
@@ -2067,7 +2067,6 @@ body {
 
 
 }
-
 
 /* =================================
    SECURITY FOCUS SECTION
