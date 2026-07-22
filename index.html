@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
         <div class="container">
             <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
-                        <div class="brand-glow-box">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
-                    </a>
+                <div class="brand-glow-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+            </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -68,13 +72,168 @@
 
         </div>
     </nav>
+    <!--  HERO SECTION (HOME)  -->
+    <header id="home" class="hero-section position-relative overflow-hidden d-flex align-items-center">
+        <div class="container position-relative z-index-2">
+            <div class="row align-items-center g-5">
+
+                <!-- Hero Left: Text Content -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="cyber-badge mb-3 d-inline-flex align-items-center gap-2">
+                        <span class="badge-dot"></span>
+                        <span>AI-Powered Defense Active</span>
+                    </div>
+
+                    <h1 class="hero-title fw-extrabold mb-4">
+                        Next-Gen <span class="neon-text">Cybersecurity</span> Intelligence
+                    </h1>
+
+                    <p class="hero-subtitle mb-5">
+                        Autonomous real-time threat neutralization and AI-driven ecosystem protection designed for
+                        zero-trust modern enterprises.
+                    </p>
+
+                    <div
+                        class="hero-actions d-flex flex-sm-row flex-column justify-content-center justify-content-lg-start gap-3">
+                        <a href="#contact"
+                            class="btn btn-cyber-primary d-inline-flex align-items-center justify-content-center gap-2">
+                            <span>Deploy Defense</span>
+                            <i class="fa-solid fa-bolt"></i>
+                        </a>
+                        <a href="#services"
+                            class="btn btn-cyber-outline d-inline-flex align-items-center justify-content-center gap-2">
+                            <i class="fa-solid fa-shield-virus"></i>
+                            <span>Explore Protocols</span>
+                        </a>
+                    </div>
+
+                    <!-- Live Status Pills -->
+                    <div
+                        class="hero-status-bar mt-5 pt-3 d-flex flex-wrap justify-content-center justify-content-lg-start gap-4">
+                        <div class="status-item d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-success"></i>
+                            <span>99.99% Threat Intercept</span>
+                        </div>
+                        <div class="status-item d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-microchip text-info"></i>
+                            <span>&lt; 2ms AI Response</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Interactive Cyber Visual / Cards -->
+                <div class="col-lg-6">
+                    <div class="hero-visual-wrapper position-relative">
+                        <!-- Neon Glow Ring Backing -->
+                        <div class="hero-glow-backdrop"></div>
+
+                        <!-- Main Radar Card -->
+                        <div class="cyber-card hero-main-card p-4 rounded-4 position-relative z-index-2">
+                            <div
+                                class="d-flex justify-content-between align-items-center mb-4 border-bottom border-secondary pb-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="status-dot-pulse"></div>
+                                    <span class="fw-bold text-white tracking-wider">LIVE NETWORK RADAR</span>
+                                </div>
+                                <span class="badge bg-dark text-info border border-info">SYSTEM SECURE</span>
+                            </div>
+
+                            <div
+                                class="radar-container d-flex justify-content-center align-items-center my-4 position-relative">
+                                <div class="radar-sweep"></div>
+                                <div class="radar-circle circle-1"></div>
+                                <div class="radar-circle circle-2"></div>
+                                <div class="radar-circle circle-3"></div>
+                                <i class="fa-solid fa-shield-halved radar-center-icon"></i>
+                            </div>
+
+                            <div class="row g-3 mt-2">
+                                <div class="col-6">
+                                    <div class="p-3 rounded-3 bg-dark-surface border border-secondary">
+                                        <div class="small text-muted mb-1">Blocked Attacks</div>
+                                        <div class="fs-4 fw-bold text-white text-nowrap">1,420,890+</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 rounded-3 bg-dark-surface border border-secondary">
+                                        <div class="small text-muted mb-1">Active Nodes</div>
+                                        <div class="fs-4 fw-bold text-cyan">42,100 ACTIVE</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Cyber Badge 1 -->
+                        <div
+                            class="floating-badge badge-top-right p-3 rounded-3 shadow-lg d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-lock text-warning fs-4"></i>
+                            <div>
+                                <div class="small fw-bold text-white">Quantum Encryption</div>
+                                <div class="micro-text text-muted">256-Bit Active</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Cyber Badge 2 -->
+                        <div
+                            class="floating-badge badge-bottom-left p-3 rounded-3 shadow-lg d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-brain text-info fs-4"></i>
+                            <div>
+                                <div class="small fw-bold text-white">AI Neural Engine</div>
+                                <div class="micro-text text-muted">v4.8 Auto-learning</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--  STATS / HIGHLIGHTS SECTION -->
+    <section class="stats-section py-5 position-relative">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-card p-4 rounded-3 text-center border-glow">
+                        <i class="fa-solid fa-shield-virus fs-2 text-cyan mb-2"></i>
+                        <h2 class="stat-number fw-bold text-white mb-1">99.9%</h2>
+                        <p class="stat-label text-muted small mb-0">Uptime Guaranteed</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card p-4 rounded-3 text-center border-glow">
+                        <i class="fa-solid fa-network-wired fs-2 text-cyan mb-2"></i>
+                        <h2 class="stat-number fw-bold text-white mb-1">500M+</h2>
+                        <p class="stat-label text-muted small mb-0">Events Analyzed/Day</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card p-4 rounded-3 text-center border-glow">
+                        <i class="fa-solid fa-stopwatch fs-2 text-cyan mb-2"></i>
+                        <h2 class="stat-number fw-bold text-white mb-1">&lt;10ms</h2>
+                        <p class="stat-label text-muted small mb-0">Threat Mitigation</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-card p-4 rounded-3 text-center border-glow">
+                        <i class="fa-solid fa-user-shield fs-2 text-cyan mb-2"></i>
+                        <h2 class="stat-number fw-bold text-white mb-1">2,400+</h2>
+                        <p class="stat-label text-muted small mb-0">Global Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Background -->
     <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+
     <!-- Footer -->
     <footer class="cyber-footer">
         <div class="container">
             <div class="row g-5">
-                
+
                 <div class="col-lg-4 col-md-6">
                     <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
                         <div class="brand-glow-box">
@@ -82,7 +241,9 @@
                         </div>
                         <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
                     </a>
-                    <p class="footer-summary">Next-generation cybersecurity driven by artificial intelligence. We actively detect, analyze, and neutralize advanced digital threats in real-time before they impact your network ecosystem.</p>
+                    <p class="footer-summary">Next-generation cybersecurity driven by artificial intelligence. We
+                        actively detect, analyze, and neutralize advanced digital threats in real-time before they
+                        impact your network ecosystem.</p>
                     <div class="cyber-social-grid d-flex gap-2 mt-4">
                         <a href="#" class="cyber-social-link"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="cyber-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -104,16 +265,20 @@
                 <div class="col-lg-2 col-md-6">
                     <h5 class="cyber-footer-title">Resources</h5>
                     <ul class="cyber-footer-links list-unstyled">
-                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i><span>Testimonials</span></a></li>
+                        <li><a href="#testimonials"><i
+                                    class="fa-solid fa-chevron-right"></i><span>Testimonials</span></a></li>
                         <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i><span>Contact Us</span></a></li>
-                        <li><a href="#privacy"><i class="fa-solid fa-chevron-right"></i><span>Privacy Policy</span></a></li>
-                        <li><a href="#terms"><i class="fa-solid fa-chevron-right"></i><span>Terms of Service</span></a></li>
+                        <li><a href="#privacy"><i class="fa-solid fa-chevron-right"></i><span>Privacy Policy</span></a>
+                        </li>
+                        <li><a href="#terms"><i class="fa-solid fa-chevron-right"></i><span>Terms of Service</span></a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
                     <h5 class="cyber-footer-title">Threat Intelligence</h5>
-                    <p class="footer-summary mb-3">Subscribe to our newsletter to receive real-time global vulnerability patches and AI defense intelligence updates.</p>
+                    <p class="footer-summary mb-3">Subscribe to our newsletter to receive real-time global vulnerability
+                        patches and AI defense intelligence updates.</p>
                     <form class="cyber-newsletter mt-2" id="cyberNewsletterForm">
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Enter security email..." required>
@@ -128,7 +293,8 @@
 
             <hr class="cyber-footer-hr">
 
-            <div class="cyber-footer-bottom d-flex flex-md-row flex-column justify-content-between align-items-center gap-3">
+            <div
+                class="cyber-footer-bottom d-flex flex-md-row flex-column justify-content-between align-items-center gap-3">
                 <p class="cyber-copyright mb-0">© 2026 CyberEx. Secure AI Protocols Active. All Rights Reserved.</p>
                 <button class="cyber-scroll-top" id="scrollTopBtn">
                     <i class="fa-solid fa-arrow-up"></i>
@@ -138,7 +304,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
