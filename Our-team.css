@@ -1540,3 +1540,530 @@ body {
 
 
 }
+
+
+
+/* =================================
+   CYBER TIMELINE SECTION
+================================= */
+
+
+.cyber-timeline {
+
+    padding: 100px 0;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+.section-heading {
+
+    max-width: 650px;
+
+    margin: auto;
+
+}
+
+
+
+.section-label {
+
+
+    display: inline-block;
+
+    color: #bfc8d8;
+
+    font-size: .8rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.section-heading h2 {
+
+
+    color: var(--text-main);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 800;
+
+}
+
+
+
+.section-heading h2 span {
+
+
+    color: rgba(76, 0, 255, .8);
+
+}
+
+
+
+.section-heading p {
+
+
+    color: var(--text-muted);
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+
+
+
+
+/* TIMELINE */
+
+
+.timeline-wrapper {
+
+
+    position: relative;
+
+    margin-top: 70px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+
+}
+
+
+
+
+
+.timeline-line {
+
+
+    position: absolute;
+
+
+    top: 45px;
+
+
+    left: 5%;
+
+
+    width: 90%;
+
+
+    height: 2px;
+
+
+
+    background:
+
+        linear-gradient(90deg,
+
+            transparent,
+
+            var(--cyan-glow),
+
+            transparent);
+
+
+    box-shadow:
+
+        0 0 20px rgba(76, 0, 255, .5);
+
+
+    animation: timelineGlow 4s infinite;
+
+
+}
+
+
+
+
+
+
+
+.timeline-item {
+
+
+    position: relative;
+
+    width: 25%;
+
+    z-index: 2;
+
+
+}
+
+
+
+
+
+
+
+
+.timeline-dot {
+
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: auto;
+
+
+    border-radius: 50%;
+
+
+    display: flex;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+
+    color: white;
+
+
+    font-size: 1.7rem;
+
+
+    background:
+
+        rgba(26, 35, 51, .7);
+
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, .12);
+
+
+
+    backdrop-filter: blur(20px);
+
+
+
+    box-shadow:
+
+        0 0 25px rgba(76, 0, 255, .25);
+
+
+
+    transition: .4s;
+
+
+}
+
+
+
+
+
+
+.timeline-item:hover .timeline-dot {
+
+
+    transform: translateY(-8px) scale(1.05);
+
+
+    box-shadow:
+
+        0 0 40px rgba(76, 0, 255, .5);
+
+
+    border-color: var(--cyan-glow);
+
+
+}
+
+
+
+
+
+
+
+.timeline-card {
+
+
+    margin-top: 25px;
+
+
+    padding: 22px;
+
+
+    border-radius: 20px;
+
+
+    background:
+
+        rgba(255, 255, 255, .04);
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, .1);
+
+
+    backdrop-filter: blur(15px);
+
+
+    transition: .4s;
+
+
+}
+
+
+
+
+
+
+
+.timeline-card:hover {
+
+
+    transform: translateY(-8px);
+
+
+    background:
+
+        rgba(255, 255, 255, .07);
+
+
+    box-shadow:
+
+        0 20px 40px rgba(0, 0, 0, .3);
+
+
+}
+
+
+
+
+
+
+
+.timeline-card span {
+
+
+    font-size: .8rem;
+
+
+    color:
+
+        rgba(76, 0, 255, .9);
+
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+
+.timeline-card h3 {
+
+
+    color: var(--text-main);
+
+
+    font-size: 1.15rem;
+
+
+    margin: 10px 0;
+
+
+}
+
+
+
+
+
+
+.timeline-card p {
+
+
+    color: var(--text-muted);
+
+
+    font-size: .9rem;
+
+
+    line-height: 1.7;
+
+
+}
+
+
+
+
+
+
+
+
+
+@keyframes timelineGlow {
+
+
+    0% {
+
+
+        opacity: .4;
+
+
+    }
+
+
+    50% {
+
+
+        opacity: 1;
+
+
+    }
+
+
+    100% {
+
+
+        opacity: .4;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:991px) {
+
+
+
+    .timeline-wrapper {
+
+
+        display: block;
+
+        padding-left: 35px;
+
+
+    }
+
+
+
+    .timeline-line {
+
+
+        width: 2px;
+
+        height: 90%;
+
+
+        left: 20px;
+
+        top: 0;
+
+
+        background:
+
+            linear-gradient(180deg,
+
+                transparent,
+
+                var(--cyan-glow),
+
+                transparent);
+
+
+    }
+
+
+
+
+
+    .timeline-item {
+
+
+        width: 100%;
+
+
+        display: flex;
+
+
+        gap: 25px;
+
+
+        margin-bottom: 40px;
+
+
+        align-items: flex-start;
+
+
+    }
+
+
+
+
+
+    .timeline-dot {
+
+
+        width: 65px;
+
+        height: 65px;
+
+        flex-shrink: 0;
+
+
+        font-size: 1.2rem;
+
+
+    }
+
+
+
+
+    .timeline-card {
+
+
+        margin-top: 0;
+
+        flex: 1;
+
+
+    }
+
+
+
+}
