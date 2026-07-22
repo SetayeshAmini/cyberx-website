@@ -387,6 +387,9 @@ body {
 
 
 
+
+/* ---------- Style Services section---------- */
+
 /* ============================================================
    CYBREX SERVICES SECTION – Premium Image-Enhanced Cards
    All selectors prefixed with .ns-services-
@@ -518,9 +521,9 @@ body {
     border: 1px solid rgba(0, 240, 255, 0.10);
     border-radius: 20px;
     overflow: hidden;
-    transition: transform 0.40s cubic-bezier(0.23, 1, 0.32, 1),
-        box-shadow 0.45s ease,
-        border-color 0.35s ease;
+    transition: transform 0.50s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.50s ease,
+        border-color 0.40s ease;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.30),
         inset 0 1px 0 rgba(255, 255, 255, 0.04);
     cursor: default;
@@ -529,7 +532,7 @@ body {
     transform: translateY(0);
 }
 
-/* Animated gradient border (glow) */
+/* Animated gradient border – moderate glow */
 .ns-services-card::after {
     content: '';
     position: absolute;
@@ -552,8 +555,10 @@ body {
 }
 
 .ns-services-card:hover::after {
-    opacity: 0.6;
-    animation: nsServicesBorderSpin 4s linear infinite;
+    opacity: 0.50;
+    /* balanced between 0.35 and 0.6 */
+    animation: nsServicesBorderSpin 4.5s linear infinite;
+    /* moderate speed */
 }
 
 @keyframes nsServicesBorderSpin {
@@ -568,13 +573,13 @@ body {
     inherits: false;
 }
 
-/* Hover state */
+/* Hover state – moderate lift and scale */
 .ns-services-card:hover {
-    transform: translateY(-10px) scale(1.01);
-    box-shadow: 0 20px 56px rgba(0, 240, 255, 0.10),
-        0 0 70px rgba(76, 0, 255, 0.06),
-        inset 0 1px 0 rgba(255, 255, 255, 0.06);
-    border-color: rgba(0, 240, 255, 0.20);
+    transform: translateY(-6px) scale(1.005);
+    box-shadow: 0 16px 48px rgba(0, 240, 255, 0.08),
+        0 0 50px rgba(76, 0, 255, 0.05),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    border-color: rgba(0, 240, 255, 0.18);
 }
 
 /* ---------- CARD IMAGE WRAPPER ---------- */
@@ -591,11 +596,12 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.60s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .ns-services-card:hover .ns-services-card__image {
-    transform: scale(1.08);
+    transform: scale(1.05);
+    /* moderate zoom */
 }
 
 /* Gradient overlay on image */
@@ -631,7 +637,7 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 3;
-    transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.40s ease, background 0.40s ease, box-shadow 0.40s ease;
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.05);
 }
 
@@ -643,17 +649,17 @@ body {
     stroke-width: 1.8;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: transform 0.4s ease;
+    transition: transform 0.40s ease;
 }
 
 .ns-services-card:hover .ns-services-card__icon-overlay {
-    transform: scale(1.08) rotate(-3deg);
-    background: rgba(0, 240, 255, 0.20);
-    box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+    transform: scale(1.05) rotate(-2deg);
+    background: rgba(0, 240, 255, 0.18);
+    box-shadow: 0 0 28px rgba(0, 240, 255, 0.10);
 }
 
 .ns-services-card:hover .ns-services-card__icon-overlay svg {
-    transform: scale(1.05) rotate(3deg);
+    transform: scale(1.03) rotate(2deg);
 }
 
 /* ---------- CARD CONTENT ---------- */
@@ -695,7 +701,7 @@ body {
 }
 
 .ns-services-card:hover .ns-services-card__number {
-    color: rgba(0, 240, 255, 0.08);
+    color: rgba(0, 240, 255, 0.07);
 }
 
 /* ---------- FEATURES (Why Choose Cybrex) ---------- */
@@ -714,14 +720,14 @@ body {
     border-radius: 16px;
     padding: 28px 22px 24px;
     text-align: center;
-    transition: transform 0.35s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+    transition: transform 0.40s ease, box-shadow 0.40s ease, border-color 0.35s ease;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .ns-services-feature:hover {
-    transform: translateY(-6px);
-    border-color: rgba(0, 240, 255, 0.18);
-    box-shadow: 0 12px 40px rgba(0, 240, 255, 0.05);
+    transform: translateY(-4px);
+    border-color: rgba(0, 240, 255, 0.16);
+    box-shadow: 0 10px 35px rgba(0, 240, 255, 0.05);
 }
 
 .ns-services-feature__icon {
@@ -734,12 +740,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.35s ease, background 0.35s ease;
 }
 
 .ns-services-feature:hover .ns-services-feature__icon {
-    transform: scale(1.08) rotate(-2deg);
-    background: rgba(0, 240, 255, 0.16);
+    transform: scale(1.05) rotate(-2deg);
+    background: rgba(0, 240, 255, 0.14);
 }
 
 .ns-services-feature__icon svg {
@@ -884,12 +890,12 @@ body {
     border-radius: 16px;
     padding: 28px 20px 24px;
     text-align: center;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.35s ease, border-color 0.35s ease;
 }
 
 .ns-services-stat:hover {
-    transform: translateY(-4px);
-    border-color: rgba(0, 240, 255, 0.12);
+    transform: translateY(-3px);
+    border-color: rgba(0, 240, 255, 0.10);
 }
 
 .ns-services-stat__number {
@@ -967,7 +973,7 @@ body {
     border: none;
     border-radius: 60px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.3s ease;
+    transition: transform 0.30s ease, box-shadow 0.35s ease, background 0.30s ease;
     box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
     position: relative;
     overflow: hidden;
@@ -976,13 +982,13 @@ body {
 }
 
 .ns-services-cta__btn:hover {
-    transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 0 50px rgba(0, 240, 255, 0.25), 0 0 80px rgba(76, 0, 255, 0.10);
+    transform: translateY(-2px) scale(1.015);
+    box-shadow: 0 0 45px rgba(0, 240, 255, 0.22), 0 0 70px rgba(76, 0, 255, 0.08);
     background: #00e0ef;
 }
 
 .ns-services-cta__btn:active {
-    transform: scale(0.97);
+    transform: scale(0.98);
 }
 
 /* ---------- FADE-IN ANIMATION ---------- */
@@ -1154,3 +1160,5 @@ body {
         right: 14px;
     }
 }
+
+/* ---------- End  style  Services section---------- */
