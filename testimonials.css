@@ -487,8 +487,7 @@ body {
 
         );
 
-    border: 1px solid rgba(255, 255, 255, .08);
-
+        border: 1px solid rgba(0, 240, 255, .12);
     border-radius: 18px;
 
     transition: .3s;
@@ -499,9 +498,8 @@ body {
 
     transform: translateY(-6px);
 
-    border-color: var(--color-primary);
 
-    box-shadow: 0 15px 35px rgba(0, 240, 255, .10);
+    box-shadow:var(--neon-shadow);
 
 }
 
@@ -548,7 +546,7 @@ body {
 
         ),
 
-        var(--bg-surface);
+        var(--bg-nav);
 
 }
 
@@ -701,8 +699,6 @@ body {
 
     transform: translateY(-7px);
 
-    border-color: var(--color-primary);
-
     background: linear-gradient(
 
         135deg,
@@ -713,7 +709,7 @@ body {
 
     );
 
-    box-shadow: 0 15px 35px rgba(0, 240, 255, .12);
+    box-shadow:var(--neon-shadow);
 
 }
 
@@ -736,7 +732,7 @@ body {
 
     color: var(--color-primary);
 
-    background: rgba(0, 240, 255, .08);
+    background:var(--bg-nav);
 
     border: 1px solid rgba(0, 240, 255, .15);
 
