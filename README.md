@@ -12,7 +12,7 @@ This project was developed as a collaborative team project using HTML, CSS, Java
 
 ---
 
-## 📌 About The Project
+## About The Project
 
 CyberX is an educational and informative multi-page website designed to introduce users to the relationship between Artificial Intelligence and Cybersecurity.
 
@@ -22,7 +22,7 @@ Our goal was to create a modern, responsive, and user-friendly website while wor
 
 ---
 
-## ✨ Features
+##  Features
 
 -  Cybersecurity information and resources
 -  Artificial Intelligence in Cybersecurity
@@ -37,7 +37,7 @@ Our goal was to create a modern, responsive, and user-friendly website while wor
 
 ---
 
-## 📄 Website Pages
+##  Website Pages
 
 The website includes multiple pages such as:
 
@@ -50,7 +50,7 @@ The website includes multiple pages such as:
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 ### Frontend
 
@@ -66,7 +66,7 @@ The website includes multiple pages such as:
 - Visual Studio Code
 
 ---
-## 👥 Our Team
+##  Our Team
 
 ###  Setayesh Amini — Team Leader
 - Led and coordinated the project.
