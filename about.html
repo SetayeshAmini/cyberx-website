@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                        <div class="brand-glow-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+                    </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Our Team</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Background -->
+<div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+<!-- Hero section -->
+  <section class="about-hero d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left Column: Content with Fade-In Animation -->
+            <div class="col-lg-6 text-center text-lg-start anim-fade-up">
+                <span class="about-badge mb-3 d-inline-block">
+                    <i class="bi bi-info-circle-fill me-2"></i> Who We Are
+                </span>
+                <h1 class="fw-bold text-white mb-4">
+                    Pioneering the Future of <br>
+                    <span class="cyber-blue-text">Autonomous Cyber Security</span>
+                </h1>
+                <p class="about-lead mb-4">
+                    CyberEx is an AI-driven cybersecurity platform dedicated to safeguarding digital landscapes. We eliminate traditional response delays by deploying cognitive AI that predicts, analyzes, and neutralizes advanced threats in real-time.
+                </p>
+                <div class="d-flex flex-sm-row flex-column gap-3 justify-content-center justify-content-lg-start">
+                    <a href="#team" class="btn btn-cyber-solid px-4 py-2.5">
+                        Meet Our Team <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="cyber-stats-card p-4 p-md-5 anim-floating">
+                    <div class="card-glow-effect"></div>
+                    <div class="row g-4">
+                        <!-- Stat 1 -->
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <div class="stat-icon mb-2"><i class="bi bi-shield-lock"></i></div>
+                                <h3 class="stat-number text-white fw-bold" data-target="99">0</h3>
+                                <p class="stat-label mb-0">Protection Rate %</p>
+                            </div>
+                        </div>
+                        <!-- Stat 2 -->
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <div class="stat-icon mb-2"><i class="bi bi-cpu"></i></div>
+                                <h3 class="stat-number text-white fw-bold" data-target="24">0</h3>
+                                <p class="stat-label mb-0">AI Autonomous Monitoring</p>
+                            </div>
+                        </div>
+                        <!-- Stat 3 -->
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <div class="stat-icon mb-2"><i class="bi bi-lightning-charge"></i></div>
+                                <h3 class="stat-number text-white fw-bold" data-target="88">0</h3>
+                                <p class="stat-label mb-0">Response Time (ms)</p>
+                            </div>
+                        </div>
+                        <!-- Stat 4 -->
+                        <div class="col-6">
+                            <div class="stat-box p-3">
+                                <div class="stat-icon mb-2"><i class="bi bi-globe"></i></div>
+                                <h3 class="stat-number text-white fw-bold" data-target="500">0</h3>
+                                <p class="stat-label mb-0">Global Threat Nodes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Our story section -->
+   <section class="our-story-section py-5">
+    <div class="container py-4">
+        <div class="row align-items-start g-5">
+            
+            <div class="col-lg-6 order-2 order-lg-1">
+                <div class="story-visual-card p-4" id="tilt-card">
+                    <div class="story-glow" id="card-glow"></div>
+                    
+                    <div class="timeline-item d-flex align-items-start mb-4">
+                        <div class="timeline-badge bg-danger-subtle text-danger me-3">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white fw-bold mb-1">Traditional Security Limits</h5>
+                            <p class="story-subtext mb-0">Legacy software relies on reactive defense, falling victim to modern zero-day attacks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item d-flex align-items-start">
+                        <div class="timeline-badge text-cyan-glow me-3">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-white fw-bold mb-1">Our AI Evolution</h5>
+                            <p class="story-subtext mb-0">CyberEx predictive algorithms instantly adapt to eliminate vulnerabilities before execution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2">
+                <span class="about-badge mb-3 d-inline-block">
+                    <i class="bi bi-book-fill me-2"></i> Our Story
+                </span>
+                <h2 class="h3 fw-bold text-white mb-4">
+                    Why We Built <span class="cyber-blue-text">CyberEx</span>
+                </h2>
+                <p class="about-lead mb-0">
+                    The landscape of cyber threats has transformed drastically. Yesterday’s firewalls and static security methods are no longer sufficient against today's hyper-complex, machine-speed attacks. Traditional solutions only respond *after* a breach has occurred, causing irreversible damage.
+                </p>
+                <p class="about-lead mb-0">
+                    Recognizing this dangerous vulnerability, we designed CyberEx. We turned away from outdated manual tracking and stepped into the predictive power of artificial intelligence. Our platform doesn't just watch your network; it foresees risks and acts autonomously.
+                </p>
+    
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Mission & vision section  -->
+<section class="mission-vision-section py-5">
+    <div class="container py-4">
+        
+        <div class="text-center mb-5 anim-css-fadeup">
+            <span class="about-badge mb-3 d-inline-block">
+                <i class="bi bi-bullseye me-2"></i> Our Core Focus
+            </span>
+            <h2 class="h3 fw-bold text-white">
+                Driving Secure Innovation Through <span class="cyber-blue-text">Vision & Purpose</span>
+            </h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5 anim-css-left">
+                <div class="mv-card p-4 p-lg-5 h-100">
+                    <div class="mv-glow"></div>
+                    <div class="mv-icon-wrapper mb-4">
+                        <i class="bi bi-shield-shaded"></i>
+                    </div>
+                    <h4 class="text-white fw-bold mb-3">Our Mission</h4>
+                    <p class="about-lead fs-6 lh-lg mb-0">
+                        To defend global digital infrastructures by deploying advanced cognitive AI. We aim to shield enterprises from unseen operational risks, eliminating cyber vulnerabilities autonomously and delivering absolute resilience before threats can disrupt execution.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 anim-css-right">
+                <div class="mv-card p-4 p-lg-5 h-100">
+                    <div class="mv-glow"></div>
+                    <div class="mv-icon-wrapper mb-4">
+                        <i class="bi bi-eye-fill"></i>
+                    </div>
+                    <h4 class="text-white fw-bold mb-3">Our Vision</h4>
+                    <p class="about-lead fs-6 lh-lg mb-0">
+                        To define the ultimate standard of predictive cybersecurity. We envision a future where autonomous machine intelligence eliminates zero-day exploits entirely, creating an unbreachable digital landscape where businesses innovate with complete confidence.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- What makes us different section  -->
+<section class="different-section py-5">
+    <div class="container py-4">
+        
+        <div class="text-center mb-5 anim-css-fadeup">
+            <span class="about-badge mb-3 d-inline-block">
+                <i class="bi bi-cpu-fill me-2"></i> Core Advantages
+            </span>
+            <h2 class="h3 fw-bold text-white">
+                What Makes Our <span class="cyber-blue-text">AI Technology</span> Different
+            </h2>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            
+            <div class="col-md-6 col-lg-4 anim-css-fadeup" style="animation-delay: 0.1s;">
+                <div class="diff-card p-4 h-100">
+                    <div class="diff-glow"></div>
+                    <div class="diff-icon-box mb-3">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <h5 class="text-white fw-bold mb-2">Predictive Analysis</h5>
+                    <p class="about-lead fs-6 lh-base mb-0">
+                        Our autonomous system predicts complex behaviors and identifies threat vectors before an attack occurs, moving beyond outdated reactive methods.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 anim-css-fadeup" style="animation-delay: 0.2s;">
+                <div class="diff-card p-4 h-100">
+                    <div class="diff-glow"></div>
+                    <div class="diff-icon-box mb-3">
+                        <i class="bi bi-eye-slash-fill"></i>
+                    </div>
+                    <h5 class="text-white fw-bold mb-2">Human Error Reduction</h5>
+                    <p class="about-lead fs-6 lh-base mb-0">
+                        We deliver complete automation of network monitoring processes, eliminating manual operational lag and human misconfigurations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 anim-css-fadeup" style="animation-delay: 0.3s;">
+                <div class="diff-card p-4 h-100">
+                    <div class="diff-glow"></div>
+                    <div class="diff-icon-box mb-3">
+                        <i class="bi bi-infinity"></i>
+                    </div>
+                    <h5 class="text-white fw-bold mb-2">Continuous Learning</h5>
+                    <p class="about-lead fs-6 lh-base mb-0">
+                        Our core artificial intelligence learns daily from emerging global attack patterns, constantly evolving to grow stronger against zero-day exploits.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                        <div class="brand-glow-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+                    </a>
+                    <p class="footer-summary">Next-generation cybersecurity driven by artificial intelligence. We actively detect, analyze, and neutralize advanced digital threats in real-time before they impact your network ecosystem.</p>
+                    <div class="cyber-social-grid d-flex gap-2 mt-4">
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 ps-lg-5">
+                    <h5 class="cyber-footer-title">Navigation</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i><span>Home</span></a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"></i><span>Services</span></a></li>
+                        <li><a href="#team"><i class="fa-solid fa-chevron-right"></i><span>Our Team</span></a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i><span>About Us</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="cyber-footer-title">Resources</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i><span>Testimonials</span></a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i><span>Contact Us</span></a></li>
+                        <li><a href="#privacy"><i class="fa-solid fa-chevron-right"></i><span>Privacy Policy</span></a></li>
+                        <li><a href="#terms"><i class="fa-solid fa-chevron-right"></i><span>Terms of Service</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="cyber-footer-title">Threat Intelligence</h5>
+                    <p class="footer-summary mb-3">Subscribe to our newsletter to receive real-time global vulnerability patches and AI defense intelligence updates.</p>
+                    <form class="cyber-newsletter mt-2" id="cyberNewsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter security email..." required>
+                            <button class="btn btn-cyber-send" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="cyber-footer-hr">
+
+            <div class="cyber-footer-bottom d-flex flex-md-row flex-column justify-content-between align-items-center gap-3">
+                <p class="cyber-copyright mb-0">© 2026 CyberEx. Secure AI Protocols Active. All Rights Reserved.</p>
+                <button class="cyber-scroll-top" id="scrollTopBtn">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="about.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body>
+</html>
