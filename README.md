@@ -6,7 +6,7 @@ This project was developed as a collaborative team project using HTML, CSS, Java
 
 ---
 
-## 🌐 Live Demo
+##  Live Demo
 
 🔗 [View Live Website]( )
 
