@@ -367,7 +367,7 @@ body {
 
 
 
-/* CONTACT PAGE */
+/* hero */
 
 .contact-hero {
     background:
@@ -394,12 +394,12 @@ body {
     background-clip: text;
     color: transparent;
 }
-
+/*TRUSTED PARTNERS*/
 .trusted-section {
     background: var(--bg-surface);
     border-radius: 0 0 30px 30px;
 }
-
+/* contact form*/
 .glass-card,
 .info-card {
 
