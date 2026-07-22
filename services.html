@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                        <div class="brand-glow-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+                    </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Our Team</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Background -->
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="row g-5">
+                
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                        <div class="brand-glow-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+                    </a>
+                    <p class="footer-summary">Next-generation cybersecurity driven by artificial intelligence. We actively detect, analyze, and neutralize advanced digital threats in real-time before they impact your network ecosystem.</p>
+                    <div class="cyber-social-grid d-flex gap-2 mt-4">
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 ps-lg-5">
+                    <h5 class="cyber-footer-title">Navigation</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i><span>Home</span></a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"></i><span>Services</span></a></li>
+                        <li><a href="#team"><i class="fa-solid fa-chevron-right"></i><span>Our Team</span></a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i><span>About Us</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="cyber-footer-title">Resources</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#testimonials"><i class="fa-solid fa-chevron-right"></i><span>Testimonials</span></a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i><span>Contact Us</span></a></li>
+                        <li><a href="#privacy"><i class="fa-solid fa-chevron-right"></i><span>Privacy Policy</span></a></li>
+                        <li><a href="#terms"><i class="fa-solid fa-chevron-right"></i><span>Terms of Service</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="cyber-footer-title">Threat Intelligence</h5>
+                    <p class="footer-summary mb-3">Subscribe to our newsletter to receive real-time global vulnerability patches and AI defense intelligence updates.</p>
+                    <form class="cyber-newsletter mt-2" id="cyberNewsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter security email..." required>
+                            <button class="btn btn-cyber-send" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="cyber-footer-hr">
+
+            <div class="cyber-footer-bottom d-flex flex-md-row flex-column justify-content-between align-items-center gap-3">
+                <p class="cyber-copyright mb-0">© 2026 CyberEx. Secure AI Protocols Active. All Rights Reserved.</p>
+                <button class="cyber-scroll-top" id="scrollTopBtn">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+
+</body>
+</html>
