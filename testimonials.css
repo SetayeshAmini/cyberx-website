@@ -677,140 +677,129 @@ body {
   box-shadow: 0 0 12px #00ff88;
 }
 
-
 /* ================= RESPONSIVE ================= */
 
 .featured-avatar {
-    width: 55px;
-    height: 55px;
-    object-fit: cover;
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.testimonial-avatar {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.progress {
+  height: 11px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, var(--color-primary), var(--cyan-glow));
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 50px;
+}
+
+@media (max-width: 991px) {
+  .testimonial-hero h1 {
+    font-size: 3.5rem;
   }
-  
+
+  .featured-testimonial-image {
+    height: 350px;
+  }
+
+  .review-section {
+    padding: 60px 0;
+  }
+
+  .security-trust {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .testimonial-hero {
+    padding: 40px 0 !important;
+  }
+
+  .testimonial-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .testimonial-hero p {
+    font-size: 0.95rem;
+  }
+
+  .featured-testimonial-image {
+    height: 280px;
+  }
+
+  .testimonial-card {
+    padding: 20px !important;
+  }
+
   .testimonial-avatar {
-    height: 180px;
-    object-fit: cover;
+    height: 230px;
+  }
+
+  .review-image {
+    height: 280px;
+  }
+
+  .security-stat-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonial-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .featured-testimonial-image {
+    height: 230px;
     border-radius: 15px;
   }
-  
-  .progress {
-    height: 11px;
-    border-radius: 50px;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.08);
+
+  .testimonial-avatar {
+    height: 260px;
   }
-  
-  .progress-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-      90deg,
-      var(--color-primary),
-      var(--cyan-glow)
-    );
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 50px;
+
+  .image-security-badge {
+    left: 12px;
+    bottom: 12px;
+    font-size: 9px;
+    padding: 8px 10px;
   }
-  
-  @media (max-width: 991px) {
-  
-    .testimonial-hero h1 {
-      font-size: 3.5rem;
-    }
-  
-    .featured-testimonial-image {
-      height: 350px;
-    }
-  
-    .review-section {
-      padding: 60px 0;
-    }
-  
-    .security-trust {
-      padding: 60px 0;
-    }
-  
+
+  .review-section {
+    padding: 40px 0;
   }
-  
-  @media (max-width: 767px) {
-  
-    .testimonial-hero {
-      padding: 40px 0 !important;
-    }
-  
-    .testimonial-hero h1 {
-      font-size: 2.6rem;
-    }
-  
-    .testimonial-hero p {
-      font-size: 0.95rem;
-    }
-  
-    .featured-testimonial-image {
-      height: 280px;
-    }
-  
-    .testimonial-card {
-      padding: 20px !important;
-    }
-  
-    .testimonial-avatar {
-      height: 230px;
-    }
-  
-    .review-image {
-      height: 280px;
-    }
-  
-    .security-stat-card {
-      padding: 20px;
-    }
-  
+
+  .security-trust {
+    padding: 40px 0;
   }
-  
-  @media (max-width: 575px) {
-  
-    .testimonial-hero h1 {
-      font-size: 2.1rem;
-    }
-  
-    .featured-testimonial-image {
-      height: 230px;
-      border-radius: 15px;
-    }
-  
-    .testimonial-avatar {
-      height: 260px;
-    }
-  
-    .image-security-badge {
-      left: 12px;
-      bottom: 12px;
-      font-size: 9px;
-      padding: 8px 10px;
-    }
-  
-    .review-section {
-      padding: 40px 0;
-    }
-  
-    .security-trust {
-      padding: 40px 0;
-    }
-  
-    .security-status {
-      padding: 15px;
-    }
-  
-    .security-status .text-success {
-      width: 100%;
-      margin-left: 0 !important;
-    }
-  
-    .contact-btn {
-      width: 100%;
-    }
-  
+
+  .security-status {
+    padding: 15px;
   }
+
+  .security-status .text-success {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
