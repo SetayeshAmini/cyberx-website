@@ -81,6 +81,11 @@ body {
   position: relative;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+.nav-link.active {
+    color: rgba(0, 240, 255, 0.6);
+    border-bottom: 2px solid rgba(0, 240, 255, 0.6); 
+    font-weight: bold;
+}
 
 .nav-link i {
   font-size: 1.1rem;
