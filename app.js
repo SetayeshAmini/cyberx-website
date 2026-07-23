@@ -64,3 +64,47 @@ if (cyberForm) {
         }, 4000);
     });
 }
+// How is it work section
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.scroll-animate');
+    
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const cardObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, observerOptions);
+
+    cards.forEach(card => {
+        cardObserver.observe(card);
+    });
+});
+// Key Features Section
+document.addEventListener('DOMContentLoaded', () => {
+    const animatedElements = document.querySelectorAll('.scroll-animate-left, .scroll-animate-right');
+    
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -40px 0px"
+    };
+
+    const featuresObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    animatedElements.forEach(element => {
+        featuresObserver.observe(element);
+    });
+});
