@@ -8,7 +8,7 @@ This project was developed as a collaborative team project using HTML, CSS, Java
 
 ##  Live Demo
 
-🔗 [View Live Website]( )
+🔗 [View Live Website]( https://setayeshamini.github.io/cyberx-website/ )
 
 ---
 
@@ -55,7 +55,7 @@ The website includes multiple pages such as:
 ### Frontend
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 - Bootstrap 5
 
@@ -70,7 +70,7 @@ The website includes multiple pages such as:
 
 ###  Setayesh Amini — Team Leader
 - Led and coordinated the project.
-- Developed the About us oage
+- Developed the About us page
 - Presenting information about the project, its purpose, and its mission in the field of AI and Cybersecurity.
 - Worked on the navigation bar and footer.
 - Managed the overall project structure.
