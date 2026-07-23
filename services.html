@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="services.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                <div class="brand-glow-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">
+                            <i class="fa-solid fa-cubes"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Our Team</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">
+                            <i class="fa-solid fa-comment-dots"></i>
+                            <span>Testimonials</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Background -->
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ==========  Services Section ========== -->
+
+    <section class="ns-services-section" id="ns-services-section">
+
+        <div class="ns-services-container">
+
+            <!-- ========== HERO ========== -->
+            <div class="ns-services-hero">
+                <span class="ns-services-hero__badge">✦ AI Security Services</span>
+                <h1 class="ns-services-hero__title">
+                    AI-Powered Cybersecurity<br />Solutions
+                </h1>
+                <p class="ns-services-hero__desc">
+                    Protect your business with next-generation artificial intelligence.
+                    Real-time threat detection, automated response, and enterprise-grade
+                    security — all in one platform.
+                </p>
+            </div>
+
+            <!-- ========== SERVICES GRID (6 premium cards with images) ========== -->
+            <div class="ns-services-grid" id="nsServicesGrid">
+
+                <!-- Card 1: AI Threat Detection -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/1200x/e0/b4/8f/e0b48f31b03a5057a71bf13e5790f771.jpg"
+                            alt="AI neural network visualization for threat detection" class="ns-services-card__image"
+                            loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                                <path d="M12 12v6" />
+                                <path d="M9 9l3-3 3 3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">AI Threat Detection</h3>
+                        <p class="ns-services-card__desc">Real-time attack detection using advanced machine learning
+                            models and neural networks.</p>
+                    </div>
+                    <span class="ns-services-card__number">01</span>
+                </div>
+
+                <!-- Card 2: Malware Detection -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/736x/d9/39/07/d939074f92a8c29169a96ab3ddd49ccc.jpg"
+                            alt="Malware detection and virus analysis on digital systems"
+                            class="ns-services-card__image" loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                                <circle cx="12" cy="15" r="3" />
+                                <path d="M9 9l3-3 3 3" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">Malware Detection</h3>
+                        <p class="ns-services-card__desc">Detect viruses, ransomware and malicious software instantly
+                            with AI-powered scanning.</p>
+                    </div>
+                    <span class="ns-services-card__number">02</span>
+                </div>
+
+                <!-- Card 3: Data Protection -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/736x/16/ea/0d/16ea0d32378862aee6c210199fe64f10.jpg"
+                            alt="Data protection and encryption security shield" class="ns-services-card__image"
+                            loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0110 0v4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">Data Protection</h3>
+                        <p class="ns-services-card__desc">Protect sensitive business information using advanced
+                            encryption and zero-trust architecture.</p>
+                    </div>
+                    <span class="ns-services-card__number">03</span>
+                </div>
+
+                <!-- Card 4: 24/7 Network Monitoring -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/736x/d9/e2/7d/d9e27d317029cce1d99186be54800fed.jpg"
+                            alt="Network monitoring and security operations center" class="ns-services-card__image"
+                            loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 2v4" />
+                                <path d="M12 18v4" />
+                                <path d="M4.93 4.93l2.83 2.83" />
+                                <path d="M16.24 16.24l2.83 2.83" />
+                                <path d="M2 12h4" />
+                                <path d="M18 12h4" />
+                                <path d="M4.93 19.07l2.83-2.83" />
+                                <path d="M16.24 7.76l2.83-2.83" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">24/7 Network Monitoring</h3>
+                        <p class="ns-services-card__desc">Continuous AI monitoring for suspicious behavior across your
+                            network infrastructure.</p>
+                    </div>
+                    <span class="ns-services-card__number">04</span>
+                </div>
+
+                <!-- Card 5: Vulnerability Assessment -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/1200x/dc/a1/da/dca1da2ec68a3f8d7d55eb5b1d7ba6f0.jpg"
+                            alt="Vulnerability assessment and code security scanning" class="ns-services-card__image"
+                            loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                                <path d="M8 12l3 3 5-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">Vulnerability Assessment</h3>
+                        <p class="ns-services-card__desc">Automatically identify security weaknesses before attackers
+                            can exploit them.</p>
+                    </div>
+                    <span class="ns-services-card__number">05</span>
+                </div>
+
+                <!-- Card 6: Incident Response -->
+                <div class="ns-services-card">
+                    <div class="ns-services-card__image-wrapper">
+                        <img src="https://i.pinimg.com/736x/22/3e/3c/223e3c49fd58d4c605aa2e929778786a.jpg"
+                            alt="Cybersecurity incident response team in action" class="ns-services-card__image"
+                            loading="lazy" />
+                        <div class="ns-services-card__image-overlay"></div>
+                        <div class="ns-services-card__icon-overlay">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                                <path d="M8 12l3 3 5-5" />
+                                <circle cx="12" cy="12" r="4" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ns-services-card__content">
+                        <h3 class="ns-services-card__title">Incident Response</h3>
+                        <p class="ns-services-card__desc">Rapid AI-powered response to cyber attacks, minimizing damage
+                            and downtime.</p>
+                    </div>
+                    <span class="ns-services-card__number">06</span>
+                </div>
+
+            </div>
+
+
+            <!-- ========== WHY CHOOSE CYBREX (Features) ========== -->
+            <div class="ns-services-section-title">
+                <h2>Why Choose Cybrex</h2>
+                <p>Enterprise-grade security powered by artificial intelligence</p>
+            </div>
+
+            <div class="ns-services-features" id="nsServicesFeatures">
+                <div class="ns-services-feature">
+                    <div class="ns-services-feature__icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                            <path d="M8 12l3 3 5-5" />
+                        </svg>
+                    </div>
+                    <h4 class="ns-services-feature__title">AI Automation</h4>
+                    <p class="ns-services-feature__desc">Automate threat response with intelligent AI agents.</p>
+                </div>
+                <div class="ns-services-feature">
+                    <div class="ns-services-feature__icon">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 6v6l4 2" />
+                        </svg>
+                    </div>
+                    <h4 class="ns-services-feature__title">Real-Time Detection</h4>
+                    <p class="ns-services-feature__desc">Instant threat identification with sub‑second latency.</p>
+                </div>
+                <div class="ns-services-feature">
+                    <div class="ns-services-feature__icon">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0110 0v4" />
+                        </svg>
+                    </div>
+                    <h4 class="ns-services-feature__title">Enterprise Security</h4>
+                    <p class="ns-services-feature__desc">Bank‑grade security for businesses of all sizes.</p>
+                </div>
+                <div class="ns-services-feature">
+                    <div class="ns-services-feature__icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2L2 7v4c0 6 4.5 10.5 10 12 5.5-1.5 10-6 10-12V7L12 2z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h4 class="ns-services-feature__title">Scalable Infrastructure</h4>
+                    <p class="ns-services-feature__desc">Grow your security as your business expands.</p>
+                </div>
+            </div>
+
+            <!-- ========== SECURITY PROCESS (Timeline) ========== -->
+            <div class="ns-services-section-title">
+                <h2>Security Process</h2>
+                <p>How Cybrex protects your business every step of the way</p>
+            </div>
+
+            <div class="ns-services-timeline">
+                <div class="ns-services-timeline__steps" id="nsServicesTimelineSteps">
+                    <div class="ns-services-timeline__step">
+                        <div class="ns-services-timeline__dot"></div>
+                        <div class="ns-services-timeline__step-content">
+                            <div class="ns-services-timeline__label">Detect</div>
+                            <div class="ns-services-timeline__sub">AI scans for threats</div>
+                        </div>
+                    </div>
+                    <div class="ns-services-timeline__step">
+                        <div class="ns-services-timeline__dot"></div>
+                        <div class="ns-services-timeline__step-content">
+                            <div class="ns-services-timeline__label">Analyze</div>
+                            <div class="ns-services-timeline__sub">ML models assess risk</div>
+                        </div>
+                    </div>
+                    <div class="ns-services-timeline__step">
+                        <div class="ns-services-timeline__dot"></div>
+                        <div class="ns-services-timeline__step-content">
+                            <div class="ns-services-timeline__label">Protect</div>
+                            <div class="ns-services-timeline__sub">Automated countermeasures</div>
+                        </div>
+                    </div>
+                    <div class="ns-services-timeline__step">
+                        <div class="ns-services-timeline__dot"></div>
+                        <div class="ns-services-timeline__step-content">
+                            <div class="ns-services-timeline__label">Monitor</div>
+                            <div class="ns-services-timeline__sub">Continuous 24/7 oversight</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ========== STATISTICS ========== -->
+            <div class="ns-services-stats" id="nsServicesStats">
+                <div class="ns-services-stat">
+                    <div class="ns-services-stat__number" data-ns-count="500">0<span>+</span></div>
+                    <div class="ns-services-stat__label">Protected Companies</div>
+                </div>
+                <div class="ns-services-stat">
+                    <div class="ns-services-stat__number" data-ns-count="99.9">0<span>%</span></div>
+                    <div class="ns-services-stat__label">Threat Detection Accuracy</div>
+                </div>
+                <div class="ns-services-stat">
+                    <div class="ns-services-stat__number" data-ns-count="24">0<span>/7</span></div>
+                    <div class="ns-services-stat__label">Monitoring</div>
+                </div>
+                <div class="ns-services-stat">
+                    <div class="ns-services-stat__number" data-ns-count="10">0<span>M+</span></div>
+                    <div class="ns-services-stat__label">Threats Blocked</div>
+                </div>
+            </div>
+
+            <!-- ========== CALL TO ACTION ========== -->
+            <div class="ns-services-cta">
+                <h2 class="ns-services-cta__title">Ready to Secure Your Business?</h2>
+                <p class="ns-services-cta__desc">
+                    Protect your business with next‑generation AI cybersecurity solutions.
+                    Join hundreds of companies already using Cybrex.
+                </p>
+                <a href="#" class="ns-services-cta__btn" id="nsServicesCtaButton">Get Started →</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container">
+            <div class="row g-5">
+
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-logo d-inline-flex align-items-center mb-3" href="#">
+                        <div class="brand-glow-box">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="brand-main-text">Cyber<span class="brand-cyan-text">Ex</span></span>
+                    </a>
+                    <p class="footer-summary">Next-generation cybersecurity driven by artificial intelligence. We
+                        actively detect, analyze, and neutralize advanced digital threats in real-time before they
+                        impact your network ecosystem.</p>
+                    <div class="cyber-social-grid d-flex gap-2 mt-4">
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="cyber-social-link"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 ps-lg-5">
+                    <h5 class="cyber-footer-title">Navigation</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i><span>Home</span></a></li>
+                        <li><a href="#services"><i class="fa-solid fa-chevron-right"></i><span>Services</span></a></li>
+                        <li><a href="#team"><i class="fa-solid fa-chevron-right"></i><span>Our Team</span></a></li>
+                        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i><span>About Us</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="cyber-footer-title">Resources</h5>
+                    <ul class="cyber-footer-links list-unstyled">
+                        <li><a href="#testimonials"><i
+                                    class="fa-solid fa-chevron-right"></i><span>Testimonials</span></a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i><span>Contact Us</span></a></li>
+                        <li><a href="#privacy"><i class="fa-solid fa-chevron-right"></i><span>Privacy Policy</span></a>
+                        </li>
+                        <li><a href="#terms"><i class="fa-solid fa-chevron-right"></i><span>Terms of Service</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="cyber-footer-title">Threat Intelligence</h5>
+                    <p class="footer-summary mb-3">Subscribe to our newsletter to receive real-time global vulnerability
+                        patches and AI defense intelligence updates.</p>
+                    <form class="cyber-newsletter mt-2" id="cyberNewsletterForm">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter security email..." required>
+                            <button class="btn btn-cyber-send" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="cyber-footer-hr">
+
+            <div
+                class="cyber-footer-bottom d-flex flex-md-row flex-column justify-content-between align-items-center gap-3">
+                <p class="cyber-copyright mb-0">© 2026 CyberEx. Secure AI Protocols Active. All Rights Reserved.</p>
+                <button class="cyber-scroll-top" id="scrollTopBtn">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="services.js"></script>
+
+</body>
+
+</html>
