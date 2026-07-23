@@ -16,25 +16,20 @@ window.addEventListener('scroll', function() {
 });
 // backgrond
 particlesJS("particles-js", {
-  particles: {
-    number: { value: 100, density: { enable: true, value_area: 800 } },
-    color: { value: "#007bff" }, 
-    shape: { type: "circle" },
-    opacity: { value: 0.7, random: false },
-    size: { value: 4, random: true },
-    line_linked: { 
-      enable: true, 
-      distance: 150, 
-      color: "#007bff", 
-      opacity: 0.4, 
-      width: 1 
+    "particles": {
+        "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+        "color": { "value": "#8a2be2" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5, "random": true },
+        "size": { "value": 3, "random": true },
+        "line_linked": { "enable": true, "distance": 130, "color": "#8a2be2", "opacity": 0.15, "width": 1 },
+        "move": { "enable": true, "speed": 1.2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
     },
-    move: { enable: true, speed: 4, direction: "none", random: false, straight: false, out_mode: "out" }
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } }
-  }
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": { "onhover": { "enable": true, "mode": "grab" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }
+    },
+    "retina_detect": true
 });
 
 // Smooth Scroll to Top Logic

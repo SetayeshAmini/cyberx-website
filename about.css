@@ -23,7 +23,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
-
 /* Navbar */
 .custom-navbar {
     background-color: var(--bg-nav) !important;
@@ -159,7 +158,6 @@ section{
 }
 /* Hero section */
 .about-hero {
-    background-color: var(--bg-dark) !important;
     min-height: 75vh !important;
     padding: 120px 0 80px 0 !important;
     position: relative !important;
