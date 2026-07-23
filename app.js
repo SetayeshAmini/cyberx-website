@@ -108,3 +108,86 @@ document.addEventListener('DOMContentLoaded', () => {
         featuresObserver.observe(element);
     });
 });
+// Global Threat Hub & Live Metrics Section
+document.addEventListener('DOMContentLoaded', () => {
+    const metricsElements = document.querySelectorAll('.metric-animate, .metric-animate-center');
+    
+    function animateCounter(element) {
+        const target = +element.getAttribute('data-target');
+        const duration = 2000; 
+        const startTime = performance.now();
+
+        function updateNumber(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            if (elapsedTime < duration) {
+                const progress = elapsedTime / duration;
+                const easeOutQuad = progress * (2 - progress); 
+                const currentValue = Math.floor(easeOutQuad * target);
+                element.innerText = currentValue.toLocaleString();
+                requestAnimationFrame(updateNumber);
+            } else {
+                element.innerText = target.toLocaleString();
+            }
+        }
+        requestAnimationFrame(updateNumber);
+    }
+
+    function animateFloatCounter(element) {
+        const target = parseFloat(element.getAttribute('data-target'));
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function updateFloat(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            if (elapsedTime < duration) {
+                const progress = elapsedTime / duration;
+                const easeOutQuad = progress * (2 - progress);
+                const currentValue = (easeOutQuad * target).toFixed(2);
+                element.innerText = currentValue;
+                requestAnimationFrame(updateFloat);
+            } else {
+                element.innerText = target;
+            }
+        }
+        requestAnimationFrame(updateFloat);
+    }
+
+    const metricsObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                
+                const counters = entry.target.querySelectorAll('.counter');
+                const floatCounters = entry.target.querySelectorAll('.counter-float');
+                
+                counters.forEach(counter => animateCounter(counter));
+                floatCounters.forEach(fCounter => animateFloatCounter(fCounter));
+
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    metricsElements.forEach(el => metricsObserver.observe(el));
+});
+// Security Compliance & Integrations Section 
+document.addEventListener('DOMContentLoaded', () => {
+    const complianceHeader = document.querySelector('.compliance-reveal');
+    
+    const observerOptions = {
+        threshold: 0.15
+    };
+
+    const complianceObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    if(complianceHeader) {
+        complianceObserver.observe(complianceHeader);
+    }
+});
